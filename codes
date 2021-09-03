@@ -59,3 +59,21 @@ Add the file’s owner permissions to the permissions that the members of the fi
 chmod g+u filename
 cat >file name - creates a new file
 cat filename - displayes file content
+Tail:- file lo last lo enni lines data istha anni lines data print chestundhi
+syntax:-
+Tail -n  number of lines  filename 
+e.g:-
+Tail -n 100 ~/var/log/example.log
+
+Head :- file lo first lines display chestundhi 
+Syntax:- 
+Head -n number of lines  filename 
+e.g:-
+head -n 1000 ~/var/log/example.log
+
+Which:- displays the location of command executable 
+syntax:-
+which command_name
+E.g:- 
+which cd
+
