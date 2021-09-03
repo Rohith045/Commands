@@ -57,3 +57,5 @@ Copy
 Add the file’s owner permissions to the permissions that the members of the file’s group have:
 
 chmod g+u filename
+cat >file name - creates a new file
+cat filename - displayes file content
