@@ -32,3 +32,28 @@ mv -v	verbose - print source and destination files
 rm -i will ask before deleting each file. ...
 rm -r will recursively delete a directory and all its contents (normally rm will not delete directories, while rmdir will only delete empty directories).
 touch filename -creates a file
+chmod g=r filename
+Copy
+Remove the execute permission for all users:
+
+chmod a-x filename
+Copy
+Recursively remove the write permission for other users:
+
+chmod -R o-w dirname
+Copy
+Remove the read, write, and execute permission for all users except the file’s owner:
+
+chmod og-rwx filename
+Copy
+The same thing can be also accomplished by using the following form:
+
+chmod og= filename
+Copy
+Give read, write and execute permission to the file’s owner, read permissions to the file’s group and no permissions to all other users:
+
+chmod u=rwx,g=r,o= filename
+Copy
+Add the file’s owner permissions to the permissions that the members of the file’s group have:
+
+chmod g+u filename
