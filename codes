@@ -20,3 +20,8 @@ cd ~username will put the user in the username's home directory.
 cd dir (without a /) will put the user in a subdirectory; for example, if they are in /usr, typing cd bin will put them in /usr/bin, while cd /bin puts them in /bin.
 cd .. will move the user up one directory. So, if they are /usr/bin/tmp, cd .. moves them to /usr/bin, while cd ../.. moves them to /usr (i.e. up two levels). The user can use this indirection to access subdirectories too. So, from /usr/bin/tmp, they can use cd ../../local to go to /usr/local.
 cd - will switch the user to the previous directory. For example, if they are in /usr/bin/tmp, and go to /etc, they can type cd - to go back to /usr/bin/tmp. The user can use this to toggle back and forth between two directories.
+option	description
+cp -a	archive files
+cp -f	force copy by removing the destination file if needed
+cp -i	interactive - ask before overwrite
+cp -l	link files instead of copy
